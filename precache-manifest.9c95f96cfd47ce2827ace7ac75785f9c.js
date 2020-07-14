@@ -1,5 +1,9 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
+    "revision": "617260a3282d74de57a7b5cf35b90c7e",
+    "url": "/alarms/._手機鈴聲.mp3"
+  },
+  {
     "revision": "965b614dd8fb0cb17e9eac0f0ace01fb",
     "url": "/alarms/alarm1.mp3"
   },
