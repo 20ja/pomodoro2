@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: './',
   pwa: {
     // manifest.json 的設定
     manifestOptions: {
