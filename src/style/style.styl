@@ -1,0 +1,304 @@
+html,
+body
+  height 100%
+
+
+body
+  font-family var(--font-family-sans-serif),"Noto Sans TC"
+
+// app--------------------------------------------------------
+
+#app
+  background url('../../public/img/bg-01.jpg')
+  background-size contain
+  width 100vw
+  height 100vh
+  z-index -3
+
+#nav
+  display flex
+  justify-content space-around
+  align-items center
+  position fixed
+  bottom 0
+  width 100%
+  height 8%
+  background rgba(242, 175, 117, 0.6)
+  color white
+
+#nav a
+  color white
+  font-size 15pt
+
+#nav a:hover
+  color #392479
+  background rgba(245, 210, 131, 0.6)
+  display block
+  width 33.333%
+  height 77.52px
+  text-align center
+  line-height 77.52px
+  text-decoration none
+
+
+// home-----------------------------------
+
+#home
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  height 100%
+
+  
+
+#home b-btn
+  color #F5B795
+
+
+#all
+  width 50%
+  height 40%
+  position relative
+  transform-style preserve-3d
+  transform rotateX(0deg) rotateY(70deg);
+  animation ballRotate 6s linear infinite 2s;
+
+#all #a
+  width 300px
+  height 300px
+  border-radius 100%
+  background #F5B795
+  position absolute
+  top 0
+  left 50px
+  transform translate(40%, 10%) rotateY(-90deg)
+
+
+
+
+#all #b
+  width 300px
+  height 300px
+  border-radius 50%
+  background #F5B795
+  opacity 0.8
+  position absolute
+  top 0
+  left 50px
+  transform translate(40%, 10%)rotateY(45deg)
+
+
+#all #c
+  width 300px
+  height 300px
+  border-radius 50%
+  background #F5B795
+  opacity 0.6
+  position absolute
+  top 0
+  left 50px
+  transform translate(40%, 10%)rotateY(225deg)
+
+
+#all #d
+  width 300px
+  height 300px
+  border-radius 50%
+  background #F8CFDB
+  opacity 0.4
+  position absolute
+  top 0
+  left 50px
+  transform translate(40%, 10%) rotateY(315deg)
+  
+@keyframes ballRotate {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) rotateY(430deg);
+    transform: rotateX(0deg) rotateY(360deg);
+  }
+}
+
+@media (max-width: 580px) {
+  // home-----------------------------------
+  #all #a {
+  width 200px
+  height 200px
+  position absolute
+  top 0
+  left 0px
+  transform translate(10%, 10%) rotateY(-90deg)
+}
+
+#all #b {
+  width 200px
+  height 200px
+  border-radius 50%
+  background #F5B795
+  opacity 0.8
+  position absolute
+  top 0
+  left 0px
+  transform translate(10%, 10%)rotateY(45deg)
+}
+
+#all #c {
+  width 200px
+  height 200px
+  border-radius 50%
+  background #F5B795
+  opacity 0.6
+  position absolute
+  top 0
+  left 0
+  transform translate(10%, 10%)rotateY(225deg)
+}
+
+#all #d{
+  width 200px
+  height 200px
+  border-radius 50%
+  background #F8CFDB
+  opacity 0.4
+  position absolute
+  top 0
+  left 0px
+  transform translate(10%, 10%) rotateY(315deg)
+  }
+  // app--------------------------------------------
+  #nav a:hover{
+  width 33.333%
+  height 53.36px
+  text-align center
+  line-height 53.36px
+  text-decoration none
+  }
+
+  #nav {
+  width 100%
+  max-width 100%
+  height 8%
+  }
+
+  #app {
+  background url('../../public/img/bg-01.jpg') center
+  background-size contain
+  width 100%
+  max-width 100%
+  height 100%
+  }
+  #settings {
+    overflow hidden
+  }
+  #settings thead {
+    width 100%
+  }
+
+}
+
+// list--------------------------
+#l-top
+  margin-right 5px
+  margin-top 20px
+  margin-bottom 10px
+
+
+@media (min-width:580px) and (max-width: 800px) {
+  // home-----------------------------------
+  #all #a {
+  width 300px
+  height 300px
+  position absolute
+  top 0
+  left 0px
+  transform translate(10%, 10%) rotateY(-90deg)
+}
+
+#all #b {
+  width 300px
+  height 300px
+  border-radius 50%
+  background #F5B795
+  opacity 0.8
+  position absolute
+  top 0
+  left 0px
+  transform translate(10%, 10%)rotateY(45deg)
+}
+
+#all #c {
+  width 300px
+  height 300px
+  border-radius 50%
+  background #F5B795
+  opacity 0.6
+  position absolute
+  top 0
+  left 0
+  transform translate(10%, 10%)rotateY(225deg)
+}
+
+#all #d{
+  width 300px
+  height 300px
+  border-radius 50%
+  background #F8CFDB
+  opacity 0.4
+  position absolute
+  top 0
+  left 0px
+  transform translate(10%, 10%) rotateY(315deg)
+  }
+
+}
+
+@media (min-width:1440px) {
+  #all #a {
+  width 300px
+  height 300px
+  position absolute
+  top 0
+  left 10%
+  transform translate(80%, 10%) rotateY(-90deg)
+}
+
+#all #b {
+  width 300px
+  height 300px
+  border-radius 50%
+  background #F5B795
+  opacity 0.8
+  position absolute
+  top 0
+  left 10%
+  transform translate(80%, 10%)rotateY(45deg)
+}
+
+#all #c {
+  width 300px
+  height 300px
+  border-radius 50%
+  background #F5B795
+  opacity 0.6
+  position absolute
+  top 0
+  left 10%
+  transform translate(80%, 10%)rotateY(225deg)
+}
+
+#all #d{
+  width 300px
+  height 300px
+  border-radius 50%
+  background #F8CFDB
+  opacity 0.4
+  position absolute
+  top 0
+  left 10%
+  transform translate(80%, 10%) rotateY(315deg)
+  }
+  }
