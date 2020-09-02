@@ -1,4 +1,5 @@
-# pomodoro
+# pomodoro番茄鐘
+https://20ja.github.io/pomodoro2/#/
 
 ## Project setup
 ```
